@@ -280,6 +280,7 @@ function predict(){
   const employed = document.getElementById('employed').value === 'yes' ? 1 : 0;
   const married = document.getElementById('married').value === 'yes' ? 1 : 0;
 
+  // Simplified illustrative scoring rule (NOT the trained model — see disclaimer)
   let score = 0;
   score += (income / 10000) * 1.1;
   score += years * 1.4;
@@ -315,4 +316,4 @@ function reset(){
 }
 </script>
 </body>
-  </html>
+</html>
